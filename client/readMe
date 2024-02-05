@@ -1,0 +1,26 @@
+/*
+function Layout(){
+  const user = null; //User object empty
+  const location = useLocation();
+
+  return user?.token ? (
+    <Outlet /> //Protect routes
+  ) : (
+    <Navigate to='/login' state={{from: location}} replace />
+  )
+}
+
+
+We'll need a layout to check or protect some of the routes because if you are not logged in you shouldn't be able to make a post or go to the home page, so you check on the basis whether the user is available or not.
+
+ If a user logs in the user will get a token, so if a user has a token he will be able to have access to all the pages in the outlet, if the user has no token mainly it's not logged in, we will navigate the user to the login page to login.
+ We can pass a state to the Navigate, in the state we pass the 'from' property meaning when the user logged we have to redirect him back to the home page,specifically, the page he wanted to access
+
+ <Routes>
+ <Route element={<Layout />} /> //This route will check whether a user exists first or not so the home page as well as the profile page. and the other route will go beneath it such as the register route, the login and the reset password, you don;t need to login before you can accesss these pages
+</Routes>
+   
+
+   After we're done with the backend, we come back to the frontend.
+   First We create a utils folder inside the src, where we define all our function
+  */

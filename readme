@@ -1,0 +1,8 @@
+/*
+Next is to integrate the frontend to the backends.
+
+Let's do some small setups
+First setup cloudinary, that's where we will store our images
+
+Create .env file in the client folder
+*/
